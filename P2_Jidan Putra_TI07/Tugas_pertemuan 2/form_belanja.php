@@ -70,19 +70,19 @@
                         echo "Nama Customer : $customer <br>";
                         echo "Produk Pilihan : $produk <br>"; 
                         echo "Jumlah Beli : $jumlah <br>";
-                        echo "Total Belanja : Rp." . number_format ($total).",-";
+                        echo "Total Belanja : Rp." . number_format ($total, 2, ".", ",").",-";
                     }elseif ($produk == "KULKAS") {
                         $total = $jumlah * 3100000;
                         echo "Nama Customer : $customer <br>";
                         echo "Produk Pilihan : $produk <br>"; 
                         echo "Jumlah Beli : $jumlah <br>";
-                        echo "Total Belanja : Rp." . number_format ($total).",-";
+                        echo "Total Belanja : Rp." . number_format ($total, 2, ".", ",").",-";
                     }elseif ($produk == "MESIN CUCI") {
                         $total = $jumlah * 3800000;
                         echo "Nama Customer : $customer <br>";
                         echo "Produk Pilihan : $produk <br>"; 
                         echo "Jumlah Beli : $jumlah <br>";
-                        echo "Total Belanja : Rp." . number_format ($total).",-";
+                        echo "Total Belanja : Rp." . number_format ($total, 2, ".", ",").",-";
                     }
                 }
             ?>
