@@ -1,7 +1,5 @@
 <?php 
-include_once 'header.php';
-include_once 'sidebar.php';
-require_once 'dbkoneksi.php';
+require_once '../dbkoneksi.php';
 ?>
 <?php 
     $_idedit = $_GET['idedit'];
@@ -24,12 +22,6 @@ require_once 'dbkoneksi.php';
           <div class="col-sm-6">
             <h1>Form Kelola Produk</h1>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -39,19 +31,7 @@ require_once 'dbkoneksi.php';
 
       <!-- Default box -->
       <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Title</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
+      <div class="card-body">
             
         <form method="POST" action="proses_produk.php">
   <div class="form-group row">
@@ -153,8 +133,8 @@ require_once 'dbkoneksi.php';
     <?php
         $button = (empty($_idedit)) ? "Simpan":"Update"; 
     ?>
-      <input type="submit" name="proses" type="submit" 
-      class="btn btn-primary" value="<?=$button?>"/>
+      <input type="submit" name="proses"  
+      class="btn btn-primary" value="Update"/>
       <input type="hidden" name="idedit" value="<?=$_idedit?>"/>
     </div>
   </div>
@@ -162,9 +142,6 @@ require_once 'dbkoneksi.php';
 
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
@@ -174,6 +151,4 @@ require_once 'dbkoneksi.php';
   </div>
 
 
-<?php
-include_once 'footer.php';
-?>
+

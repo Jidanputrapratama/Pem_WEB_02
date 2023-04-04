@@ -1,5 +1,5 @@
 <?php 
-require_once 'dbkoneksi.php';
+require_once '../dbkoneksi.php';
 ?>
 <?php
     $_id = $_GET['id'];

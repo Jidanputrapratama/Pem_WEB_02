@@ -1,5 +1,5 @@
 <?php 
-require_once 'dbkoneksi.php';
+require_once '../dbkoneksi.php';
 ?>
             
 <form method="POST" action="proses_produk.php">
